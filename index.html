@@ -8,12 +8,12 @@
         function(m,key,value) {
             vars[key] = value;
         });
-        console.log(vars);
+       // console.log(vars);
         return vars;
     }
     $( document ).ready(function() {
         var urlVar = getUrlVars();
-        //console.log(a);
+        alert(urlVar);
     });
 </script>
 <button type="button"
