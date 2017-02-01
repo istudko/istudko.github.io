@@ -15,15 +15,10 @@
         return vars;
     }
     $( document ).ready(function() {
-        var urlVar = getUrlVars().a;
-        alert(urlVar);
+        var x = getUrlVars();
+        print (x.a + x.b);
+        //alert(urlVar);
     });
 </script>
-<button type="button"
-onclick="document.getElementById('demo').innerHTML = Date()">
-Click me to display Date and Time.</button>
-
-<p id="demo"></p>
-
 </body>
 </html> 
