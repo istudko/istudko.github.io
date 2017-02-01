@@ -6,5 +6,6 @@
         $sum = $a * $b;
         $result = array('a' => $a, 'b' => $b, 'result' => $sum);
         echo json_encode($result);
+        
     }
 ?>
