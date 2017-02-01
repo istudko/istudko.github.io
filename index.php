@@ -1,4 +1,5 @@
 <?php
+    header('Content-Type: application/json');
     $a = $_GET['a']; 
     $b = $_GET['b']; 
     if(isset($a) && isset($b)) {
