@@ -11,11 +11,11 @@
         function(m,key,value) {
             vars[key] = value;
         });
-       // console.log(vars);
+        console.log(vars);
         return vars;
     }
     $( document ).ready(function() {
-        var urlVar = getUrlVars();
+        var urlVar = getUrlVars().a;
         alert(urlVar);
     });
 </script>
