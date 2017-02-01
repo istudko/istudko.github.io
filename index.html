@@ -1,8 +1,21 @@
 <html>
 <body>
 
-<h1>My First JavaScript</h1>
-
+<script>
+    function getUrlVars() {
+        var vars = {};
+        var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi,    
+        function(m,key,value) {
+            vars[key] = value;
+        });
+        console.log(vars);
+        return vars;
+    }
+    $( document ).ready(function() {
+        var urlVar = getUrlVars();
+        //console.log(a);
+    }
+</script>
 <button type="button"
 onclick="document.getElementById('demo').innerHTML = Date()">
 Click me to display Date and Time.</button>
